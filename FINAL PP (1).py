@@ -553,7 +553,7 @@ plt.show()
 imarray = np.array(img)
 
 imV = imarray.reshape((500*500, 1))
-plt.hist(imV, density=True, bins=30, range=[120,255])
+plt.hist(imV, density=True, bins=30, range=[0,255])
 plt.title('Porosity Histogram')
 plt.show()
 
@@ -569,35 +569,3 @@ area = np.size(BW2)
 fw = np.sum(BW2)
 
 print('Porosity of the thin section:', (1 - (fw/area))*100)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
