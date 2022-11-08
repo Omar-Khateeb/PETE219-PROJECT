@@ -53,9 +53,6 @@ data.index.names = ['DEPTH']
 data['DEPTH'] = data.index
 msno.matrix(data)
 
-data = data.dropna()
-msno.matrix(data)
-
 
 ############ VISUALIZAING DATA ############
 
